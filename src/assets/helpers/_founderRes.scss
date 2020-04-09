@@ -1,0 +1,99 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $ExtraLargeDevices) {
+  .aboutFounder .founderImg {
+    width: 170px;
+    height: 211px;
+  }
+
+  .aboutFounder .founderSecondary h3 {
+    font-size: 2rem;
+  }
+
+  .aboutFounder .founderTitle h2 {
+    font-size: 2.5rem;
+  }
+
+  .aboutFounder .founderSign::after {
+    width: 60%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $LargeDevices) {
+  .aboutFounder .col-9 {
+    padding-left: 3rem;
+  }
+  .aboutFounder .founderSign::after {
+    width: 50%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $MediumDevices) {
+  .aboutFounder .founderImg {
+    width: 150px;
+    height: 185px;
+  }
+
+  .aboutFounder .founderSecondary h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .aboutFounder .founderTitle h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .aboutFounder .founderSign::after {
+    width: 40%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+  .aboutFounder .founderImg {
+    width: 130px;
+    height: 150px;
+  }
+
+  .aboutFounder .founderSecondary h3 {
+    font-size: 1rem;
+  }
+
+  .aboutFounder .founderTitle h2 {
+    font-size: 1.2rem;
+  }
+
+  .aboutFounder .founderSign::after {
+    width: 0%;
+  }
+
+  .aboutFounder .founderSign .sign::before {
+    left: -26%;
+    font-size: 1rem;
+  }
+
+  .aboutFounder .founderSign h3 {
+    font-size: 2rem;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $ExtraSmallDevices) {
+  .aboutFounder .founderImg {
+    width: 94px;
+    height: 117px;
+  }
+  .aboutFounder .founderSecondary h3 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .aboutFounder .founderTitle h2 {
+    font-size: 0.8rem;
+  }
+
+  .aboutFounder .section h5 {
+    font-size: 1.5rem;
+  }
+}

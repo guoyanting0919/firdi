@@ -1,0 +1,50 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $ExtraLargeDevices) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $LargeDevices) {
+  .tecReport .activitySection .activityPicGroup {
+    height: 450px;
+  }
+  .tecReport .activitySection .activeTitle {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $MediumDevices) {
+  .tecReport .pRow20 {
+    display: none;
+  }
+
+  .tecReport .resTecMenu {
+    display: block;
+  }
+
+  .tecReport .title span {
+    display: none;
+  }
+
+  .tecReport .title {
+    justify-content: center;
+  }
+  .tecReport .activitySection .activityPicGroup {
+    height: 350px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+  .tecReport .picContainer .circlePic {
+    @include size(110px);
+  }
+  .tecReport .activitySection .activityPicGroup {
+    height: 250px;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $ExtraSmallDevices) {
+}

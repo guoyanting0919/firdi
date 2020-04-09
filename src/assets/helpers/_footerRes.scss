@@ -1,0 +1,38 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $ExtraLargeDevices) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $LargeDevices) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $MediumDevices) {
+  .footer .footerTxt {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    width: 90%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+  .footer .footerTxt {
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 1.1px;
+    width: 90%;
+    text-align: center;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $ExtraSmallDevices) {
+  .footer .footerTxt {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}

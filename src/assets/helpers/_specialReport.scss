@@ -1,0 +1,56 @@
+.specialReport {
+  margin-bottom: 30px;
+  position: relative;
+
+  .readMore {
+    display: none;
+  }
+
+  .title {
+    width: 90%;
+    margin: auto;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $chineseFont;
+    letter-spacing: 1.5px;
+    color: #151515;
+    border-bottom: 1px solid #525252;
+
+    h3 {
+      font-size: 20px;
+    }
+    span {
+      font-size: 12px;
+    }
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  .reportContents {
+    padding: 20px 100px;
+
+    .reportContent {
+      margin-bottom: 2.5rem;
+    }
+
+    h4 {
+      font-family: $chineseFont;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 1.3px;
+      color: #000000;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      color: #6d6d6d;
+    }
+  }
+}

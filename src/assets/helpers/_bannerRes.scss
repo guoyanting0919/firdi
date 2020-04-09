@@ -1,0 +1,105 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $ExtraLargeDevices) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $LargeDevices) {
+  .banner {
+    height: auto;
+    background-image: none;
+  }
+
+  .banner .bannerRow {
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner .bannerIframe {
+    padding: 0;
+  }
+
+  .banner .bannerIframeSize {
+    width: 100%;
+    height: 400px;
+  }
+
+  .banner .bannerTxt {
+    background-color: #f1f1f1;
+  }
+
+  .banner .bannerTxt .bannerTxtTitle h5 {
+    color: #454545;
+  }
+
+  .banner .bannerTxt .activeBannerTitle::after {
+    left: 50%;
+    bottom: -29%;
+  }
+
+  .banner .bannerTxt .activeBannerTitle {
+    color: #1a85a1 !important;
+  }
+
+  .banner .bannerTxt .bannerTxtTitle {
+    border-bottom: 1px solid #525252;
+    padding-bottom: 10px;
+  }
+
+  .banner .bannerTxt .activeBannerTitle::after {
+    border-color: transparent transparent #595858 transparent;
+  }
+
+  .banner .bannerTxtDetail li {
+    color: #191919;
+    border-bottom: 1px dashed #979797;
+  }
+
+  .banner .moreReport {
+    display: none;
+  }
+
+  .detailResMb {
+    margin-bottom: 60px;
+  }
+
+  .banner .resMoreReport {
+    display: block;
+    color: black;
+    font-size: 16px;
+    font-family: $chineseFont;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $MediumDevices) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+  .banner .bannerTxt .bannerTxtTitle h5,
+  .banner .bannerTxtDetail li {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .banner .resMoreReport {
+    font-size: 12px;
+  }
+
+  .headerContainer .logo {
+    width: 250px;
+    height: 75px;
+  }
+
+  .banner .bannerTxtDetail li .bannerDate {
+    margin-right: 20px;
+    width: 30%;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $ExtraSmallDevices) {
+}

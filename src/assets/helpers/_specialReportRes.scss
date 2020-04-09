@@ -1,0 +1,44 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $ExtraLargeDevices) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $LargeDevices) {
+  .specialReport .title span,
+  .specialReport .title p {
+    display: none;
+  }
+
+  .specialReport .title {
+    justify-content: center;
+    font-size: 21px;
+  }
+  .specialReport .reportContents {
+    padding: 20px 60px;
+  }
+
+  .specialReport .readMore {
+    display: block;
+    color: black;
+    font-size: 16px;
+    font-family: $chineseFont;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $MediumDevices) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+  .specialReport .reportContents {
+    padding: 20px 40px;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $ExtraSmallDevices) {
+}

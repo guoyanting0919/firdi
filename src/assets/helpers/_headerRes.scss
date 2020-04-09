@@ -1,0 +1,86 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $ExtraLargeDevices) {
+  .headerContainer .logo {
+    width: 250px;
+    height: 70px;
+  }
+
+  .headerContainer .headerBottomList {
+    width: 110%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $LargeDevices) {
+  .headerContainer .headerTopList,
+  .headerContainer .headerBottomList {
+    display: none;
+  }
+  .headerContainer .headerListDetails.headerListDetailsActive {
+    display: none;
+  }
+
+  .headerListDetails {
+    display: none;
+  }
+
+  .headerContainer .logoPosition {
+    left: 0;
+    justify-content: center;
+  }
+
+  .headerContainer .logo {
+    width: 270px;
+    height: 75px;
+  }
+
+  .lgMenu {
+    display: none;
+  }
+
+  .headerContainer .resBar {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: calc((100vw - 200px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fa-bars {
+      font-size: 20px;
+      color: #454545;
+      z-index: 1;
+    }
+  }
+
+  .headerContainer .resMenu {
+    width: 100%;
+    height: calc(100vh - 138px);
+    background-color: white;
+    top: 138px;
+    position: absolute;
+    left: -100%;
+    z-index: 2;
+  }
+
+  .headerContainer .resMenu.activeList {
+    left: 0;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $MediumDevices) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $ExtraSmallDevices) {
+  .headerContainer .logo {
+    width: 200px;
+    height: 50px;
+  }
+}

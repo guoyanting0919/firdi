@@ -1,0 +1,44 @@
+.cooperation {
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .cooperationContainer {
+    display: flex;
+    overflow: auto;
+  }
+
+  .cooperationWrap {
+    width: auto;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .cooperationImg {
+    width: 120px;
+    height: 60px;
+    background-color: darkcyan;
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    margin: 20px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    width: 0;
+    height: 0;
+    background: rgb(153, 169, 175);
+  }
+}

@@ -1,0 +1,24 @@
+// bs4
+@import '~bootstrap/scss/functions';
+@import './helpers/variables';
+@import '~bootstrap/scss/bootstrap';
+
+@import './helpers/mixin';
+
+@import './helpers/header';
+@import './helpers/headerRes';
+@import './helpers/footer';
+@import './helpers/footerRes';
+@import './helpers/banner';
+@import './helpers/bannerRes';
+@import './helpers/specialReport';
+@import './helpers/specialReportRes';
+@import './helpers/tecReport';
+@import './helpers/tecReportRes';
+@import './helpers/cooperation';
+@import './helpers/routerTitle';
+@import './helpers/routerTitleRes';
+@import './helpers/contactIcon';
+@import './helpers/contactIconRes';
+@import './helpers/founder';
+@import './helpers/founderRes';

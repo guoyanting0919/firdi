@@ -1,0 +1,116 @@
+.banner {
+  @include size(100%, 420px);
+  background-image: url('./assets/image/bannerBg.png');
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .moreReport {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    font-family: $chineseFont;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid #ffffff;
+    }
+  }
+
+  .resMoreReport {
+    display: none;
+  }
+
+  .bannerIframe {
+    @include flexCenter;
+  }
+
+  .bannerRow {
+    padding: 0 60px;
+    overflow: hidden;
+  }
+
+  .bannerIframeSize {
+    width: 600px;
+    height: 300px;
+  }
+
+  .bannerTxt {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 40px;
+
+    .bannerTxtTitle {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #b1ece8;
+
+      h5 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        letter-spacing: 1.4px;
+        color: #b1ece8;
+        font-family: $chineseFont;
+        padding: 0 20px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+    }
+
+    .bannerTitle {
+      border-right: 1px solid #b1ece8;
+    }
+    .activeBannerTitle {
+      color: white !important;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        border-width: 7px;
+        border-style: solid;
+        border-color: transparent transparent #ffffff transparent;
+        transform: translate(-50%, 0%);
+        left: 50%;
+        bottom: -42%;
+      }
+    }
+  }
+
+  .bannerTxtDetail {
+    li {
+      list-style: none;
+      font-family: $chineseFont;
+      font-weight: 100;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 1.3px;
+      color: #ffffff;
+      margin: 20px 0;
+      display: flex;
+      border-bottom: 1px dashed #b1ece8;
+
+      .bannerDate {
+        margin-right: 0px;
+        width: 30%;
+        text-align: center;
+      }
+
+      .wid70 {
+        width: 80%;
+      }
+    }
+  }
+}
