@@ -4,6 +4,7 @@
       <div class="col-12 col-lg-7 p-0">
         <div class="title">
           <h3>
+            <i class="fas fa-atom mr-2"></i>
             產業與科技報導
             <span>Industry and Technology Report</span>
           </h3>
@@ -105,25 +106,83 @@
           <div ref="innerWidth" style="display: flex; overflow: hidden;">
             <div class="picWrap" ref="picWrap">
               <div class="circlePic">
-                <div class="circlePicBg">生物資源保存及研究中心</div>
+                <div class="circlePicBg">
+                  <a
+                    href="https://www.bcrc.firdi.org.tw/"
+                    id="ctl00_ContentPlaceHolder1_a_DE5000"
+                    target="_blank"
+                    title="生物資源保存及研究中心"
+                  >
+                    <div class="researchmenuword" id="menu01a">生物資源保存及研究中心</div>
+                  </a>
+                </div>
               </div>
               <div class="circlePic">
-                <div class="circlePicBg">生物資源保存及研究中心</div>
+                <div class="circlePicBg">
+                  <a
+                    href="http://webc.firdi.org.tw/Firdi_Center_Index.aspx?Dept_No=DE6000&amp;HasList=0"
+                    id="ctl00_ContentPlaceHolder1_a_DE6000"
+                    target="_blank"
+                    title="技術服務及推廣中心"
+                  >
+                    <div class="researchmenuword" id="menu04a">技術服務及推廣中心</div>
+                  </a>
+                </div>
               </div>
               <div class="circlePic">
-                <div class="circlePicBg">生物資源保存及研究中心</div>
+                <div class="circlePicBg">
+                  <a
+                    href="http://mms.firdi.org.tw/"
+                    id="ctl00_ContentPlaceHolder1_a_DE8000"
+                    target="_blank"
+                    title="食品產業學院"
+                  >
+                    <div class="researchmenuword" id="menu05a">食品產業學院</div>
+                  </a>
+                </div>
               </div>
               <div class="circlePic">
-                <div class="circlePicBg">生物資源保存及研究中心</div>
+                <div class="circlePicBg">
+                  <a
+                    href="http://www.stsc.firdi.org.tw/"
+                    id="ctl00_ContentPlaceHolder1_a_DE7000"
+                    target="_blank"
+                    title="南台灣服務中心"
+                  >
+                    <div class="researchmenuword" id="menu06a">南台灣服務中心</div>
+                  </a>
+                </div>
               </div>
               <div class="circlePic">
-                <div class="circlePicBg">生物資源保存及研究中心</div>
+                <div class="circlePicBg">
+                  <a
+                    href="http://webc.firdi.org.tw/Firdi_Center_Index.aspx?Dept_No=DE2000&amp;HasList=0"
+                    id="ctl00_ContentPlaceHolder1_a_DE2000"
+                    target="_blank"
+                    title="產品及製程研發中心"
+                  >
+                    <div class="researchmenuword" id="menu02a">產品及製程研發中心</div>
+                  </a>
+                </div>
               </div>
               <div class="circlePic">
-                <div class="circlePicBg">生物資源保存及研究中心</div>
+                <div class="circlePicBg">
+                  <a href="https://kinglab.firdi.org.tw/" target="_blank" title>
+                    <div class="researchmenuword" id="menu03a">檢驗技術研發及服務中心</div>
+                  </a>
+                </div>
               </div>
               <div class="circlePic">
-                <div class="circlePicBg">生物資源保存及研究中心</div>
+                <div class="circlePicBg">
+                  <a
+                    href="https://csc.firdi.org.tw/csc/"
+                    id="ctl00_ContentPlaceHolder1_a_DE9000"
+                    target="_blank"
+                    title="驗證服務中心"
+                  >
+                    <div class="researchmenuword" id="menu07a">驗證服務中心</div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -131,7 +190,9 @@
       </div>
       <div class="col-12 col-lg-5 p-0 activitySection">
         <div class="activeTitle">
-          <h3>活動花絮</h3>
+          <h3>
+            <i class="fas fa-flag mr-2"></i>活動花絮
+          </h3>
         </div>
         <div class="activityPicGroup mt-4">
           <div id="carouselExampleIndicators" class="carousel slide h-100" data-ride="false">

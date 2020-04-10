@@ -1,0 +1,35 @@
+.NewsActivityId {
+  .news {
+    width: 80%;
+    margin: 1rem auto;
+    font-family: $chineseFont;
+  }
+
+  .newsDate {
+    margin: 0;
+    padding: 1rem 0;
+    color: #979797;
+    letter-spacing: 1.7px;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .newsTitle {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    color: #4d4d4d;
+    letter-spacing: 3px;
+    font-size: 1.8rem;
+  }
+
+  .newsContent {
+    color: #968989;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1.7px;
+    line-height: 2;
+  }
+}

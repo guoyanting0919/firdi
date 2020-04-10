@@ -39,9 +39,10 @@
             <ul class="headerTopList">
               <!-- <li>回首頁</li> -->
               <router-link to="/">回首頁</router-link>
-              <router-link to="/about">網站導覽</router-link>
+              <router-link to="/about/AboutFounder">網站導覽</router-link>
               <!-- <li>網站導覽</li> -->
-              <li>Facebook</li>
+              <router-link to="/news/NewsActivity">Facebook</router-link>
+              <!-- <li>Facebook</li> -->
               <li>聯絡本所</li>
               <li>RSS</li>
               <li>English</li>

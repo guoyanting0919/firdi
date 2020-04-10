@@ -19,11 +19,11 @@ export default {
   props: {
     routerTitle: {
       type: String,
-      required: true
+      required: false
     },
     secondaryTitle: {
       type: String,
-      required: true
+      required: false
     }
   },
   components: {

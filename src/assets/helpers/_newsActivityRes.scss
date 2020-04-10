@@ -4,42 +4,34 @@
 
 // Large devices (desktops, 992px and up)
 @media (max-width: $LargeDevices) {
+  .NewsActivity li .newsDate {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .NewsActivity li {
+    flex-direction: column;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: $MediumDevices) {
-  .contactIcon {
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-
-    .contactContainer {
-      width: auto;
-    }
-
-    .prePage {
-      display: none;
-    }
-  }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: $SmallDevices) {
-  .contactIcon {
-    bottom: 10%;
-    right: 5%;
+  .NewsActivity .newsList {
+    width: 100%;
+    border: none;
+    margin: 0.5rem auto;
+  }
 
-    .iconGroup i {
-      margin-right: 0.5rem;
-      font-size: 1rem;
-    }
+  .NewsActivity li,
+  .NewsActivity .title {
+    padding: 1rem 3rem;
   }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: $ExtraSmallDevices) {
-  .contactIcon {
-    bottom: 70%;
-    right: 5%;
-  }
 }

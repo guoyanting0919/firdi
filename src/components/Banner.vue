@@ -1,6 +1,8 @@
 <template>
   <div class="banner">
-    <span class="moreReport">More 更多消息</span>
+    <span class="moreReport">
+      <i class="fas fa-arrow-right mr-2"></i>More 更多消息
+    </span>
     <div class="container-fluid p-0 h-100">
       <div class="row h-100 w-100 bannerRow">
         <div class="col-12 col-lg-5 h-100 bannerIframe">

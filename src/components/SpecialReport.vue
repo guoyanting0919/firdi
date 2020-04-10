@@ -1,12 +1,17 @@
 <template>
   <div class="specialReport mt-3">
-    <span class="readMore">More 更多報導</span>
+    <span class="readMore">
+      <i class="fas fa-arrow-right mr-2"></i>More 更多報導
+    </span>
     <div class="title">
       <h3>
+        <i class="fas fa-file-alt mr-2"></i>
         特別報導
         <span>Special report</span>
       </h3>
-      <p>More 更多報導</p>
+      <p>
+        <i class="fas fa-arrow-right mr-2"></i>More 更多報導
+      </p>
     </div>
     <div class="reportContents">
       <div class="reportContent">

@@ -61,8 +61,8 @@
       &::after {
         content: '';
         position: absolute;
-        width: 12px;
-        height: 12px;
+        width: 18px;
+        height: 18px;
         background-color: transparent;
         right: -3%;
         transform: rotate(45deg);
@@ -150,12 +150,9 @@
     .circlePicBg {
       opacity: 0;
       transition: 0.5s;
-      font-family: $chineseFont;
-      color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 16px;
       padding: 5px;
       text-align: center;
       font-weight: 100;
@@ -163,6 +160,13 @@
       height: 100%;
       border-radius: 200px;
       background-color: rgba($color: #000000, $alpha: 0.5);
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: $chineseFont;
+        font-size: 1rem;
+      }
     }
 
     .circlePic {

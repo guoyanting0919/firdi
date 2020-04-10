@@ -4,16 +4,19 @@
 
 // Large devices (desktops, 992px and up)
 @media (max-width: $LargeDevices) {
+  .routerTitle .titleContainer h2 {
+    font-size: 1.7rem;
+  }
+
+  .routerTitle .titleContainer {
+    width: 90%;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: $MediumDevices) {
   .routerTitle .titleContainer {
     flex-direction: column;
-  }
-
-  .routerTitle .titleContainer h2 {
-    font-size: 1.8rem;
   }
 
   .routerTitle .titleContainer .routerBreads {
@@ -28,7 +31,7 @@
   }
 
   .routerTitle .titleContainer span {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
   .routerTitle .titleContainer {
     padding: 1.5rem 0;
