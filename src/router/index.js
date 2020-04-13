@@ -16,6 +16,8 @@ import ServeCan from '../views/ServeCan.vue';
 
 // purchase
 import Purchase from '../views/Purchase.vue';
+import PurchaseHome from '../views/PurchaseHome.vue';
+import PurchaseAnnounce from '../views/PurchaseAnnounce.vue';
 
 Vue.use(VueRouter);
 
@@ -33,7 +35,19 @@ const routes = [
   {
     path: '/purchase',
     name: 'Purchase',
-    component: Purchase
+    component: Purchase,
+    children: [
+      {
+        path: '',
+        name: 'PurchaseHome',
+        component: PurchaseHome
+      },
+      {
+        path: 'purchaseAnnounce',
+        name: 'PurchaseAnnounce',
+        component: PurchaseAnnounce
+      }
+    ]
   },
   {
     path: '/serve',

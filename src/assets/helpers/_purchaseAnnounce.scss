@@ -1,0 +1,39 @@
+.PurchaseAnnounce {
+  width: 80%;
+  margin: auto;
+  font-family: $chineseFont;
+
+  .PurchaseAnnounceTitle {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+  }
+
+  .PurchaseAnnounceDetail {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #666666;
+    font-weight: 300;
+  }
+
+  .PurchaseAnnounceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .announce {
+    width: 30%;
+    background-color: #999999;
+    margin: 1rem;
+    padding: 1rem;
+
+    span {
+      display: inline-block;
+      width: 30%;
+      font-size: 1rem;
+    }
+  }
+}
