@@ -24,7 +24,12 @@
                 class="w-100 menuDetail"
                 :class="{'menuDetailActive':menuDetailActive===item.title}"
               >
-                <li class="detailItem" v-for="(detail,index) in item.detail" :key="index">{{detail}}</li>
+                <router-link
+                  class="detailItem"
+                  v-for="(detail,index) in item.detail"
+                  :key="index"
+                  :to="{name:detail.pathName}"
+                >{{detail.title}}</router-link>
               </ul>
             </li>
           </ul>
@@ -37,20 +42,22 @@
         <div class="col-lg-8 p-0 lgMenu">
           <div class="headerList">
             <ul class="headerTopList">
-              <!-- <li>回首頁</li> -->
-              <router-link to="/">回首頁</router-link>
-              <router-link to="/about/AboutFounder">網站導覽</router-link>
-              <!-- <li>網站導覽</li> -->
-              <router-link to="/news/NewsActivity">Facebook</router-link>
-              <!-- <li>Facebook</li> -->
-              <li>聯絡本所</li>
-              <li>RSS</li>
-              <li>English</li>
+              <router-link class="topListRouter" to="/">回首頁</router-link>
+              <router-link class="topListRouter" to="/about/AboutFounder">網站導覽</router-link>
+              <router-link class="topListRouter" to="/news/NewsActivity">Facebook</router-link>
+              <router-link class="topListRouter" to="/iframe">聯絡本所</router-link>
+              <router-link class="topListRouter" to="/serve">RSS</router-link>
+              <!-- <li>English</li> -->
             </ul>
           </div>
           <div class="headerList">
             <ul class="headerBottomList">
-              <li @click="detailClickHandler(item)" v-for="(item,i) in menuData" :key="i">{{item}}</li>
+              <li
+                class="headerBottomListLi"
+                @click="detailClickHandler(item)"
+                v-for="(item,i) in menuData"
+                :key="i"
+              >{{item}}</li>
             </ul>
           </div>
         </div>
@@ -58,7 +65,12 @@
         <!-- headerListDetails -->
         <div class="headerListDetails" :class="{'headerListDetailsActive':itemIsHover}">
           <ul class="h-100">
-            <li v-for="(item, i ) in detailItems" :key="i">{{item}}</li>
+            <router-link
+              class="detailItem"
+              v-for="(item, i ) in detailItems"
+              :key="i"
+              :to="{name:item.pathName}"
+            >{{item.title}}</router-link>
           </ul>
         </div>
       </div>
@@ -78,36 +90,80 @@ export default {
         "產業知識庫",
         "教育訓練",
         "採購公告",
-        "最新消息"
+        "同仁專區"
       ],
       resMenuData: [
         {
           title: "本所簡介",
-          detail: ["本所簡介", "本所簡介", "本所簡介", "本所簡介"]
+          detail: [
+            {
+              title: "創辦人事項",
+              pathName: "AboutFounder"
+            }
+          ]
         },
         {
           title: "最新消息",
-          detail: ["最新消息", "最新消息", "最新消息", "最新消息"]
-        },
-        {
-          title: "產業知識庫",
-          detail: ["產業知識庫", "產業知識庫", "產業知識庫", "產業知識庫"]
-        },
-        {
-          title: "轉業合作",
-          detail: ["轉業合作", "轉業合作", "轉業合作", "轉業合作"]
+          detail: [
+            {
+              title: "研討會及重要活動",
+              pathName: "NewsActivity"
+            }
+          ]
         },
         {
           title: "服務項目",
-          detail: ["服務項目", "服務項目", "服務項目", "服務項目"]
+          detail: [
+            {
+              title: "罐頭服務",
+              pathName: "ServeCan"
+            }
+          ]
+        },
+        {
+          title: "轉業合作",
+          detail: [
+            {
+              title: "影音專區",
+              pathName: "Iframe"
+            }
+          ]
+        },
+        {
+          title: "產業知識庫",
+          detail: [
+            {
+              title: "創辦人事項",
+              pathName: "AboutFounder"
+            }
+          ]
         },
         {
           title: "教育訓練",
-          detail: ["教育訓練", "教育訓練", "教育訓練", "教育訓練"]
+          detail: [
+            {
+              title: "創辦人事項",
+              pathName: "AboutFounder"
+            }
+          ]
         },
         {
           title: "採購公告",
-          detail: ["採購公告", "採購公告", "採購公告", "採購公告"]
+          detail: [
+            {
+              title: "採購公告",
+              pathName: "Purchase"
+            }
+          ]
+        },
+        {
+          title: "同仁專區",
+          detail: [
+            {
+              title: "創辦人事項",
+              pathName: "AboutFounder"
+            }
+          ]
         }
       ],
       activeList: false,
@@ -122,34 +178,61 @@ export default {
       if (!this.hoverItem) {
         arr = [];
       } else if (this.hoverItem === "本所簡介") {
-        arr = ["本所簡介", "本所簡介", "本所簡介", "本所簡介", "本所簡介"];
+        arr = [
+          {
+            title: "創辦人事項",
+            pathName: "AboutFounder"
+          }
+        ];
       } else if (this.hoverItem === "最新消息") {
-        arr = ["最新消息", "最新消息", "最新消息"];
+        arr = [
+          {
+            title: "研討會及重要活動",
+            pathName: "NewsActivity"
+          }
+        ];
       } else if (this.hoverItem === "服務項目") {
-        arr = ["服務項目", "服務項目", "服務項目", "服務項目"];
+        arr = [
+          {
+            title: "罐頭服務",
+            pathName: "ServeCan"
+          }
+        ];
       } else if (this.hoverItem === "轉業合作") {
         arr = [
-          "轉業合作",
-          "轉業合作",
-          "轉業合作",
-          "轉業合作",
-          "轉業合作",
-          "轉業合作"
+          {
+            title: "影音專區",
+            pathName: "Iframe"
+          }
         ];
       } else if (this.hoverItem === "產業知識庫") {
         arr = [
-          "產業知識庫",
-          "產業知識庫",
-          "產業知識庫",
-          "產業知識庫",
-          "產業知識庫"
+          {
+            title: "創辦人事項",
+            pathName: "AboutFounder"
+          }
         ];
       } else if (this.hoverItem === "教育訓練") {
-        arr = ["教育訓練", "教育訓練", "教育訓練", "教育訓練"];
+        arr = [
+          {
+            title: "創辦人事項",
+            pathName: "AboutFounder"
+          }
+        ];
       } else if (this.hoverItem === "採購公告") {
-        arr = ["採購公告", "採購公告", "採購公告", "採購公告", "採購公告"];
+        arr = [
+          {
+            title: "採購公告",
+            pathName: "Purchase"
+          }
+        ];
       } else if (this.hoverItem === "同仁專區") {
-        arr = ["同仁專區", "同仁專區", "同仁專區"];
+        arr = [
+          {
+            title: "創辦人事項",
+            pathName: "AboutFounder"
+          }
+        ];
       }
       return arr;
     }

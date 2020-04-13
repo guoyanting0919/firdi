@@ -1,0 +1,54 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $ExtraLargeDevices) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $LargeDevices) {
+  .purchase .purchaseFile .file {
+    width: 40%;
+  }
+  .purchase .purchaseTxt {
+    padding: 2rem;
+  }
+  .purchase .purchasetTitle {
+    font-size: 1.5rem;
+  }
+  .purchase .sectionTitle {
+    font-size: 1.25rem;
+  }
+  .purchase .secondTitle,
+  .purchase .sectionContent {
+    font-size: 1rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $MediumDevices) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+  .purchase .purchaseFile .file {
+    width: 80%;
+  }
+  .purchase .purchaseTxt {
+    padding: 1.5rem;
+  }
+  .purchase .purchasetTitle {
+    font-size: 1.25rem;
+  }
+  .purchase .sectionTitle {
+    font-size: 1rem;
+  }
+  .purchase .secondTitle,
+  .purchase .sectionContent {
+    font-size: 0.8rem;
+  }
+  .purchase .agree {
+    font-size: 1rem;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $ExtraSmallDevices) {
+}

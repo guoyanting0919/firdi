@@ -1,0 +1,70 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $ExtraLargeDevices) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $LargeDevices) {
+  .serveCan .serveBox .serveItem {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .serveCan .serveBox {
+    padding: 0.5rem;
+  }
+  .serveCan .serveBox .serveTitle {
+    padding-top: 1rem;
+    letter-spacing: 2px;
+  }
+  .serveCan .serveCanContainer {
+    width: 90%;
+  }
+  .serveCan .serveBox .serveItem .downloadBtn {
+    margin-right: 2rem;
+    height: 1.8rem;
+    padding: 0.1rem 1rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $MediumDevices) {
+  .serveCan .serveBox .serveTitle {
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+  .serveCan .serveBox .serveItem .fileName {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .serveCan .serveBox .serveItem {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $ExtraSmallDevices) {
+  .serveCan .serveBox .serveItem .fileName {
+    font-size: 1rem;
+  }
+  .serveCan .serveBox .serveItem .downloadBtn {
+    margin-right: 1rem;
+    height: 1.5rem;
+    font-size: 0.5rem;
+    padding: 0rem 6px;
+  }
+  .serveCan .serveBox .serveTitle {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding-bottom: 0.5rem;
+    margin-bottom: -1rem;
+  }
+
+  .serveCan .serveBox .serveItem {
+    padding: 0.8rem;
+    margin: 1rem 0;
+  }
+}

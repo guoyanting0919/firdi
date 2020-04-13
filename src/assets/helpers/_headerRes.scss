@@ -48,7 +48,7 @@
     align-items: center;
 
     .fa-bars {
-      font-size: 20px;
+      font-size: 1.25rem;
       color: #454545;
       z-index: 1;
     }
@@ -75,12 +75,12 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: $SmallDevices) {
+  .headerContainer .logo {
+    width: 200px !important;
+    height: 50px !important;
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: $ExtraSmallDevices) {
-  .headerContainer .logo {
-    width: 200px;
-    height: 50px;
-  }
 }

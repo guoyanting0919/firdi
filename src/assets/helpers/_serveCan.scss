@@ -1,0 +1,61 @@
+.serveCan {
+  .serveCanContainer {
+    width: 80%;
+    margin: auto;
+  }
+
+  .serveBox {
+    // border-bottom: 1px solid rgb(206, 206, 206);
+    padding: 1rem;
+    font-family: $chineseFont;
+    margin-bottom: 3rem;
+    padding-bottom: 0;
+
+    .serveTitle {
+      font-size: 1.3rem;
+      padding: 1rem;
+      margin: 0;
+      font-weight: 500;
+      letter-spacing: 3px;
+      padding-top: 0;
+      line-height: 1.5;
+      border-bottom: 1px solid #ffffff;
+    }
+
+    .serveItem {
+      list-style: none;
+      font-weight: 300;
+      font-size: 1.125rem;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      border-radius: 15px;
+
+      &:nth-child(2n + 1) {
+        background: #eeeeee;
+      }
+
+      .downloadBtn {
+        padding: 0.1rem 2rem;
+        color: white;
+        background: #54a5f0;
+        border-radius: 35px;
+        margin-right: 3rem;
+        display: inline-block;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:active {
+          background-color: #1a85a1;
+        }
+      }
+
+      .fileName {
+        font-size: 1rem;
+      }
+    }
+  }
+}

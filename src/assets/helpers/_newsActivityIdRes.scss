@@ -1,0 +1,36 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $ExtraLargeDevices) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $LargeDevices) {
+  .NewsActivityId .news {
+    width: 90%;
+  }
+  .NewsActivityId .newsTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $MediumDevices) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+  .NewsActivityId .newsTitle {
+    font-size: 1rem;
+  }
+  .NewsActivityId .newsDate {
+    font-size: 0.8rem;
+  }
+
+  .NewsActivityId .newsContent {
+    font-size: 0.8rem;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $ExtraSmallDevices) {
+}

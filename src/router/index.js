@@ -8,6 +8,14 @@ import AboutFounder from '../views/AboutFounder.vue';
 import News from '../views/News.vue';
 import NewsActivity from '../views/NewsActivity.vue';
 import NewsActivityId from '../views/NewsActivityId.vue';
+// iframe
+import Iframe from '../views/Iframe.vue';
+// serve
+import Serve from '../views/Serve.vue';
+import ServeCan from '../views/ServeCan.vue';
+
+// purchase
+import Purchase from '../views/Purchase.vue';
 
 Vue.use(VueRouter);
 
@@ -15,7 +23,29 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: Home
+  },
+  {
+    path: '/iframe',
+    name: 'Iframe',
+    component: Iframe
+  },
+  {
+    path: '/purchase',
+    name: 'Purchase',
+    component: Purchase
+  },
+  {
+    path: '/serve',
+    name: 'Serve',
+    component: Serve,
+    children: [
+      {
+        path: '',
+        name: 'ServeCan',
+        component: ServeCan
+      }
+    ]
   },
   {
     path: '/about',
@@ -25,9 +55,9 @@ const routes = [
       {
         path: 'AboutFounder',
         name: 'AboutFounder',
-        component: AboutFounder,
-      },
-    ],
+        component: AboutFounder
+      }
+    ]
   },
   {
     path: '/news',
@@ -37,19 +67,19 @@ const routes = [
       {
         path: 'NewsActivity',
         name: 'NewsActivity',
-        component: NewsActivity,
+        component: NewsActivity
       },
       {
         path: ':NewsActivityId',
         name: 'NewsActivityId',
-        component: NewsActivityId,
-      },
-    ],
-  },
+        component: NewsActivityId
+      }
+    ]
+  }
 ];
 
 const router = new VueRouter({
-  routes,
+  routes
 });
 
 export default router;

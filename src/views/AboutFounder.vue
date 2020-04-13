@@ -1,6 +1,6 @@
 <template>
   <div class="aboutFounder">
-    <RouterTitle :routerTitle="'本所簡介'" :secondaryTitle="'創辦人事項'"></RouterTitle>
+    <RouterTitle :routerTitle="'本所簡介'" :secondaryTitle="'創辦人事略'"></RouterTitle>
     <div class="founderList mb-1">
       <div class="founderWrap">
         <div class="listWrap">

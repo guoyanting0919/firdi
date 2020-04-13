@@ -54,14 +54,17 @@
       width: auto;
       display: flex;
       margin-bottom: 10px;
+      flex-wrap: wrap;
     }
 
     .listItem {
-      width: 200px;
+      // width: 200px;
+      margin-right: 3rem;
       border-left: 1px solid black;
-      padding-left: 15px;
+      padding-left: 0.7rem;
       display: inline-block;
       font-family: $chineseFont;
+      margin-top: 0.4rem;
     }
 
     ::-webkit-scrollbar {

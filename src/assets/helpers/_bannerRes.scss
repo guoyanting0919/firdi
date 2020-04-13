@@ -52,6 +52,7 @@
   .banner .bannerTxtDetail li {
     color: #191919;
     border-bottom: 1px dashed #979797;
+    margin: 0.5rem 0;
   }
 
   .banner .moreReport {
@@ -65,7 +66,7 @@
   .banner .resMoreReport {
     display: block;
     color: black;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: $chineseFont;
     position: absolute;
     bottom: 15px;
@@ -75,18 +76,25 @@
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: $MediumDevices) {
+  .banner .bannerTxtDetail li p {
+    margin: 0.5rem 0;
+  }
+
+  .banner .bannerTxtDetail li {
+    margin: 0;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: $SmallDevices) {
   .banner .bannerTxt .bannerTxtTitle h5,
   .banner .bannerTxtDetail li {
-    font-size: 12px;
+    font-size: 0.75rem;
     padding: 0 10px;
   }
 
   .banner .resMoreReport {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .headerContainer .logo {

@@ -11,7 +11,7 @@
 
   .specialReport .title {
     justify-content: center;
-    font-size: 21px;
+    font-size: 1.3rem;
   }
   .specialReport .reportContents {
     padding: 20px 60px;
@@ -20,7 +20,7 @@
   .specialReport .readMore {
     display: block;
     color: black;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: $chineseFont;
     position: absolute;
     bottom: 15px;
@@ -36,6 +36,11 @@
 @media (max-width: $SmallDevices) {
   .specialReport .reportContents {
     padding: 20px 40px;
+  }
+  .specialReport .reportContents h4 {
+    line-height: 1.3;
+    font-size: 1rem;
+    font-weight: 500;
   }
 }
 

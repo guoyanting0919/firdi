@@ -19,13 +19,13 @@
     border-bottom: 1px solid #525252;
 
     h3 {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
     span {
-      font-size: 12px;
+      font-size: 0.75rem;
     }
     p {
-      font-size: 14px;
+      font-size: 0.875rem;
       margin: 0;
     }
   }
@@ -39,18 +39,19 @@
 
     h4 {
       font-family: $chineseFont;
-      font-weight: 300;
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 26px;
       letter-spacing: 1.3px;
       color: #000000;
+      font-weight: 500;
     }
 
     p {
       font-weight: 300;
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 20px;
       color: #6d6d6d;
+      font-family: $chineseFont;
     }
   }
 }
