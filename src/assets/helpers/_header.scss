@@ -1,4 +1,5 @@
 .headerContainer {
+  box-shadow: 0px 4px 5px #e0e0e0;
   .header {
     max-width: 1920px;
     height: 138px;
@@ -104,6 +105,7 @@
     padding: 0;
     position: absolute;
     right: 3%;
+    margin-right: 3rem;
   }
 
   .headerBottomList {
@@ -160,6 +162,41 @@
       border-style: solid;
       border-color: #4c4c4c transparent transparent transparent;
       //   transform: rotate(-180deg);
+    }
+
+    .childMenu.childMenuActive {
+      visibility: visible;
+      opacity: 1;
+      z-index: 9;
+    }
+
+    .childMenu {
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.5s;
+      position: absolute;
+      padding: 0;
+      width: 156px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      background-color: rgba($color: #ffffff, $alpha: 1);
+      // background-image: linear-gradient(to top, #8a8a8a, transparent);
+      padding-left: 1rem;
+      padding-right: 0;
+
+      .childList {
+        color: #000000;
+        text-align: left;
+        font-weight: 300;
+        margin: 8px 0;
+        font-size: 0.9rem;
+
+        &.router-link-active {
+          color: #54a5f0;
+        }
+      }
     }
   }
 

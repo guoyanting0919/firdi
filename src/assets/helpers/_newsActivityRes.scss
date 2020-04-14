@@ -4,13 +4,17 @@
 
 // Large devices (desktops, 992px and up)
 @media (max-width: $LargeDevices) {
-  .NewsActivity li .newsDate {
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
+  .NewsActivity,
+  .newsElse,
+  .newsTraining {
+    li .newsDate {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
 
-  .NewsActivity li {
-    flex-direction: column;
+    li {
+      flex-direction: column;
+    }
   }
 }
 
@@ -20,15 +24,18 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: $SmallDevices) {
-  .NewsActivity .newsList {
-    width: 100%;
-    border: none;
-    margin: 0.5rem auto;
-  }
-
-  .NewsActivity li,
-  .NewsActivity .title {
-    padding: 1rem 3rem;
+  .NewsActivity,
+  .newsElse,
+  .newsTraining {
+    .newsList {
+      width: 100%;
+      border: none;
+      margin: 0.5rem auto;
+    }
+    li,
+    .title {
+      padding: 1rem 3rem;
+    }
   }
 }
 

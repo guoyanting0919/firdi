@@ -37,7 +37,8 @@
 
         <!-- Menu -->
         <div class="col-12 col-lg-4 logoPosition">
-          <div class="logo"></div>
+          <!-- <div class="logo"></div> -->
+          <router-link to="/" class="logo"></router-link>
         </div>
         <div class="col-lg-8 p-0 lgMenu">
           <div class="headerList">
@@ -54,16 +55,26 @@
             <ul class="headerBottomList">
               <li
                 class="headerBottomListLi"
-                @click="detailClickHandler(item)"
-                v-for="(item,i) in menuData"
+                @click="detailClickHandler(item.title)"
+                v-for="(item,i) in resMenuData"
                 :key="i"
-              >{{item}}</li>
+              >
+                {{item.title}}
+                <ul class="childMenu" :class="{'childMenuActive':hoverItem===item.title}">
+                  <router-link
+                    :to="{name:child.pathName}"
+                    class="childList"
+                    v-for="(child,i) in item.detail"
+                    :key="i"
+                  >{{child.title}}</router-link>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
 
         <!-- headerListDetails -->
-        <div class="headerListDetails" :class="{'headerListDetailsActive':itemIsHover}">
+        <!-- <div class="headerListDetails" :class="{'headerListDetailsActive':itemIsHover}">
           <ul class="h-100">
             <router-link
               class="detailItem"
@@ -72,7 +83,7 @@
               :to="{name:item.pathName}"
             >{{item.title}}</router-link>
           </ul>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
@@ -99,6 +110,46 @@ export default {
             {
               title: "創辦人事項",
               pathName: "AboutFounder"
+            },
+            {
+              title: "董事長簡歷",
+              pathName: "AboutChairman"
+            },
+            {
+              title: "沿革",
+              pathName: "AboutHistory"
+            },
+            {
+              title: "宗旨",
+              pathName: "AboutPurpose"
+            },
+            {
+              title: "專業成就",
+              pathName: "AboutAchievement"
+            },
+            {
+              title: "組織架構",
+              pathName: "AboutOrganization"
+            },
+            {
+              title: "組織架構圖",
+              pathName: "AboutOrganizationImg"
+            },
+            {
+              title: "位置圖",
+              pathName: "AboutPosition"
+            },
+            {
+              title: "平面圖",
+              pathName: "AboutFloor"
+            },
+            {
+              title: "工作年報",
+              pathName: "AboutWorkReport"
+            },
+            {
+              title: "財務報表",
+              pathName: "AboutFinancial"
             }
           ]
         },
@@ -107,7 +158,15 @@ export default {
           detail: [
             {
               title: "研討會及重要活動",
-              pathName: "NewsActivity"
+              pathName: "NewsActivityHome"
+            },
+            {
+              title: "最新服務與訓練",
+              pathName: "NewsTrainingHome"
+            },
+            {
+              title: "其他",
+              pathName: "NewsElseHome"
             }
           ]
         },
@@ -152,7 +211,7 @@ export default {
           detail: [
             {
               title: "採購公告",
-              pathName: "Purchase"
+              pathName: "PurchaseHome"
             }
           ]
         },
@@ -223,7 +282,7 @@ export default {
         arr = [
           {
             title: "採購公告",
-            pathName: "Purchase"
+            pathName: "PurchaseHome"
           }
         ];
       } else if (this.hoverItem === "同仁專區") {

@@ -1,0 +1,49 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $ExtraLargeDevices) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $LargeDevices) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $MediumDevices) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+  .aboutChairman .chairmanContainer,
+  .aboutChairman .section,
+  .aboutHistoryContainer,
+  .aboutPurposeContainer,
+  .aboutAchievementContainer,
+  .aboutOrganizationImgContainer,
+  .aboutFloorImgContainer,
+  .aboutFinancialContainer,
+  .aboutPositionContainer,
+  .aboutOrganizationContainer {
+    width: 90% !important;
+  }
+
+  .aboutHistoryContainer p,
+  .aboutPurposeContainer p,
+  .aboutAchievementContainer p,
+  .aboutHistoryContainer .purposeMenu li,
+  .aboutPurposeContainer .purposeMenu li,
+  .aboutAchievementContainer .purposeMenu li,
+  .aboutHistoryContainer .achievementMenu li,
+  .aboutPurposeContainer .achievementMenu li,
+  .aboutAchievementContainer .achievementMenu li {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  .aboutHistoryContainer .achievementMenu h4,
+  .aboutPurposeContainer .achievementMenu h4,
+  .aboutAchievementContainer .achievementMenu h4 {
+    font-size: 1rem;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $ExtraSmallDevices) {
+}

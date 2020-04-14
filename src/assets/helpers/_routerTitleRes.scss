@@ -7,10 +7,6 @@
   .routerTitle .titleContainer h2 {
     font-size: 1.7rem;
   }
-
-  .routerTitle .titleContainer {
-    width: 90%;
-  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -28,6 +24,10 @@
 @media (max-width: $SmallDevices) {
   .routerTitle .titleContainer h2 {
     font-size: 1.2rem;
+  }
+
+  .routerTitle .titleContainer {
+    width: 90%;
   }
 
   .routerTitle .titleContainer span {

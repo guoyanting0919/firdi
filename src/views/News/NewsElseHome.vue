@@ -1,16 +1,14 @@
 <template>
-  <div class="NewsActivity">
-    <RouterTitle :routerTitle="'最新消息'" :secondaryTitle="'研討會及重要活動'"></RouterTitle>
-
+  <div class="NewsActivityHome">
     <Pagination></Pagination>
     <div class="newsList">
       <h4 class="title">
-        <i class="mr-2 far fa-calendar"></i>研討會及重要活動
+        <i class="mr-2 far fa-calendar"></i>其他
       </h4>
       <ul>
         <li>
           <div class="newsDate">2019/10/30</div>
-          <router-link to="/news/1213">
+          <router-link to="/news/NewsElse/123">
             <div class="newsTitle">預見商機─2019年臺灣銀髮餐食產業鏈結發展研討會</div>
           </router-link>
         </li>
@@ -56,12 +54,9 @@
 </template>
 
 <script>
-import RouterTitle from "@/components/RouterTitle.vue";
 import Pagination from "@/components/Pagination.vue";
 export default {
-  name: "NewsActivity",
   components: {
-    RouterTitle,
     Pagination
   }
 };

@@ -1,0 +1,40 @@
+.aboutOrganizationImgContainer,
+.aboutFloorImgContainer,
+.aboutFinancialContainer,
+.aboutPositionContainer,
+.aboutOrganizationContainer {
+  width: 80%;
+  margin: auto;
+
+  .financialLink {
+    font-family: $chineseFont;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}
+
+.aboutPosition {
+  font-family: $chineseFont;
+  .positionInfo {
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 1rem 0;
+    }
+    li {
+      font-weight: 300;
+      line-height: 1.5;
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+  }
+}
+
+.organizationTable {
+  font-family: $chineseFont;
+  font-weight: 300;
+  p,
+  div {
+    margin: 1rem 0;
+  }
+}

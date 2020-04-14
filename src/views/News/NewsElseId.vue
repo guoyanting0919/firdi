@@ -1,6 +1,6 @@
 <template>
-  <div class="NewsActivityId">
-    <RouterTitle :routerTitle="'最新消息'" :secondaryTitle="'研討會及重要活動'"></RouterTitle>
+  <div class="NewsElseId">
+    <!-- <RouterTitle :routerTitle="'最新消息'" :secondaryTitle="'研討會及重要活動'"></RouterTitle> -->
     <div class="news">
       <h5 class="newsDate">108年11月18至19日</h5>
       <h4 class="newsTitle">罐頭食品之殺菌設備量測技術與標準流程業者說明會</h4>
@@ -24,13 +24,11 @@
 <script>
 import RouterTitle from "@/components/RouterTitle.vue";
 export default {
-  name: "NewsActivityId",
+  name: "NewsElseId",
   components: {
     RouterTitle
   },
-  created() {
-    console.log(this.$route.params.NewsActivityId);
-  }
+  created() {}
 };
 </script>
 

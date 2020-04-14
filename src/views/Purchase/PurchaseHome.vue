@@ -145,14 +145,20 @@
           <a href="http://ifs.firdi.org.tw:880/F.P.A/資訊單元公告/電腦資源服務/資安規格書.docx">資安規格書</a>
         </div>
       </div>
-      <div class="agree">我已看過投標須知,進入採購公告區</div>
+      <router-link tag="div" class="agree" :to="{name:PurchaseAnnounce}">我已看過投標須知,進入採購公告區</router-link>
+      <!-- <div >我已看過投標須知,進入採購公告區</div> -->
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "PurchaseHome"
+  name: "PurchaseHome",
+  data() {
+    return {
+      PurchaseAnnounce: "PurchaseAnnounce"
+    };
+  }
 };
 </script>
 

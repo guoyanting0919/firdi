@@ -1,0 +1,58 @@
+.aboutHistoryContainer,
+.aboutPurposeContainer,
+.aboutAchievementContainer {
+  width: 80%;
+  margin: auto;
+  font-family: $chineseFont;
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+  }
+
+  p {
+    font-weight: 300;
+    color: #868484;
+    letter-spacing: 3px;
+    line-height: 2;
+    font-size: 1rem;
+  }
+
+  .purposeMenu {
+    padding: 0;
+    margin-bottom: 8rem;
+  }
+
+  .purposeMenu li {
+    list-style: none;
+    font-weight: 300;
+    color: #868484;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid #646464;
+    margin: 1rem 0;
+  }
+
+  .achievementMenu {
+    margin-bottom: 5rem;
+    padding: 0;
+    h4 {
+      font-size: 1.25rem;
+    }
+
+    li {
+      list-style: none;
+      font-weight: 300;
+      color: #868484;
+      letter-spacing: 3px;
+      line-height: 1.5;
+      font-size: 1rem;
+      padding-left: 1rem;
+      border-left: 2px solid #646464;
+      margin: 1rem 0;
+    }
+  }
+}

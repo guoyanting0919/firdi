@@ -1,0 +1,39 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $ExtraLargeDevices) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $LargeDevices) {
+  .PurchaseAnnounce .PurchaseAnnounceTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .PurchaseAnnounce .PurchaseAnnounceDetail {
+    font-size: 1.25rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $MediumDevices) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+  .PurchaseAnnounce {
+    width: 90%;
+  }
+  .PurchaseAnnounce .PurchaseAnnounceTitle {
+    font-size: 1rem;
+  }
+  .PurchaseAnnounce .PurchaseAnnounceDetail {
+    font-size: 0.8rem;
+  }
+  .PurchaseAnnounce .announce p,
+  .PurchaseAnnounce .announce span {
+    font-size: 0.8rem;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $ExtraSmallDevices) {
+}

@@ -34,12 +34,16 @@
       font-size: 1rem;
     }
   }
+
+  .cooperation .cooperationWrap {
+    flex-wrap: nowrap;
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: $ExtraSmallDevices) {
   .contactIcon {
-    bottom: 70%;
+    bottom: 55%;
     right: 5%;
   }
 }

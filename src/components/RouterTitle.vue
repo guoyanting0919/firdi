@@ -10,10 +10,13 @@
         <span>
           <i class="fas fa-home mr-2"></i>
           <router-link class="homeLink mr-1" to="/">首頁</router-link>>
-          <router-link class="homeLink" :to="{name:routerTitlePath}">{{routerTitle}}</router-link>
+          <span class="homeLink mr-1">{{routerTitle}} ></span>
 
-          <span v-if="secondaryTitle">></span>
-          {{secondaryTitle}}
+          <router-link
+            v-if="secondaryTitle"
+            :to="{name:routerTitlePath}"
+            class="homeLink"
+          >{{secondaryTitle}}</router-link>
         </span>
       </div>
     </div>

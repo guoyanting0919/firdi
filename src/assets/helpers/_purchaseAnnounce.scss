@@ -20,19 +20,23 @@
   .PurchaseAnnounceContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    margin-top: 3rem;
   }
 
   .announce {
-    width: 30%;
-    background-color: #999999;
-    margin: 1rem;
+    // background-color: #999999;
+    // margin: 1rem;
     padding: 1rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+
+    p {
+      margin-bottom: 0.5rem;
+    }
 
     span {
       display: inline-block;
-      width: 30%;
+      width: 35%;
       font-size: 1rem;
     }
   }
