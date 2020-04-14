@@ -174,8 +174,40 @@ export default {
           title: "服務項目",
           detail: [
             {
+              title: "專利寄存",
+              pathName: "ServePatent"
+            },
+            {
+              title: "委託服務",
+              pathName: "ServeDelegate"
+            },
+            {
               title: "罐頭服務",
               pathName: "ServeCan"
+            },
+            {
+              title: "驗證服務",
+              pathName: "ServeVerification"
+            },
+            {
+              title: "服務手冊",
+              pathName: "ServeManual"
+            },
+            {
+              title: "開放實驗室",
+              pathName: "ServeLaboratory"
+            },
+            {
+              title: "品質控管",
+              pathName: "ServeQuality"
+            },
+            {
+              title: "本所出版品",
+              pathName: "ServePublishing"
+            },
+            {
+              title: "運作之毒性化學物",
+              pathName: "ServePoison"
             }
           ]
         },

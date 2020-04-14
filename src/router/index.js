@@ -28,8 +28,16 @@ import NewsTrainingHome from '../views/News/NewsTrainingHome.vue';
 // iframe
 import Iframe from '../views/Iframe.vue';
 // serve
-import Serve from '../views/Serve.vue';
-import ServeCan from '../views/ServeCan.vue';
+import Serve from '../views/Serve/Serve.vue';
+import ServeCan from '../views/Serve/ServeCan.vue';
+import ServeDelegate from '../views/Serve/ServeDelegate.vue';
+import ServeLaboratory from '../views/Serve/ServeLaboratory.vue';
+import ServeManual from '../views/Serve/ServeManual.vue';
+import ServePatent from '../views/Serve/ServePatent.vue';
+import ServePoison from '../views/Serve/ServePoison.vue';
+import ServePublishing from '../views/Serve/ServePublishing.vue';
+import ServeQuality from '../views/Serve/ServeQuality.vue';
+import ServeVerification from '../views/Serve/ServeVerification.vue';
 
 // purchase
 import Purchase from '../views/Purchase/Purchase.vue';
@@ -72,9 +80,49 @@ const routes = [
     component: Serve,
     children: [
       {
-        path: '',
+        path: 'ServeCan',
         name: 'ServeCan',
         component: ServeCan
+      },
+      {
+        path: 'ServeDelegate',
+        name: 'ServeDelegate',
+        component: ServeDelegate
+      },
+      {
+        path: 'ServeLaboratory',
+        name: 'ServeLaboratory',
+        component: ServeLaboratory
+      },
+      {
+        path: 'ServeManual',
+        name: 'ServeManual',
+        component: ServeManual
+      },
+      {
+        path: 'ServePatent',
+        name: 'ServePatent',
+        component: ServePatent
+      },
+      {
+        path: 'ServePoison',
+        name: 'ServePoison',
+        component: ServePoison
+      },
+      {
+        path: 'ServePublishing',
+        name: 'ServePublishing',
+        component: ServePublishing
+      },
+      {
+        path: 'ServeQuality',
+        name: 'ServeQuality',
+        component: ServeQuality
+      },
+      {
+        path: 'ServeVerification',
+        name: 'ServeVerification',
+        component: ServeVerification
       }
     ]
   },

@@ -104,6 +104,7 @@
 <script>
 import RouterTitle from "@/components/RouterTitle.vue";
 export default {
+  name: "ServeCan",
   components: {
     RouterTitle
   }
