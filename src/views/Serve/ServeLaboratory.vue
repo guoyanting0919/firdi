@@ -1,6 +1,7 @@
 <template>
   <div class="serveLaboratory">
     <RouterTitle :routerTitle="'服務項目'" :secondaryTitle="'開放實驗室'"></RouterTitle>
+    <div class="serverContainer"></div>
   </div>
 </template>
 

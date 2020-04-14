@@ -25,6 +25,7 @@
                 :class="{'menuDetailActive':menuDetailActive===item.title}"
               >
                 <router-link
+                  @click.native="activeList=false"
                   class="detailItem"
                   v-for="(detail,index) in item.detail"
                   :key="index"

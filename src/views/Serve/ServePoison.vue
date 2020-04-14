@@ -1,6 +1,7 @@
 <template>
   <div class="servePoison">
     <RouterTitle :routerTitle="'服務項目'" :secondaryTitle="'運作之毒性化學物'"></RouterTitle>
+    <div class="serverContainer"></div>
   </div>
 </template>
 

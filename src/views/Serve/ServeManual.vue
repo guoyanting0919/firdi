@@ -1,6 +1,7 @@
 <template>
   <div class="serveManual">
     <RouterTitle :routerTitle="'服務項目'" :secondaryTitle="'服務手冊'"></RouterTitle>
+    <div class="serverContainer"></div>
   </div>
 </template>
 

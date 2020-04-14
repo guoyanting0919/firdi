@@ -1,6 +1,7 @@
 <template>
   <div class="serveVerification">
     <RouterTitle :routerTitle="'服務項目'" :secondaryTitle="'驗證服務'"></RouterTitle>
+    <div class="serverContainer"></div>
   </div>
 </template>
 

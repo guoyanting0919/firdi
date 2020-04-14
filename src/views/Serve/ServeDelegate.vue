@@ -1,6 +1,7 @@
 <template>
   <div class="serveDelegate">
     <RouterTitle :routerTitle="'服務項目'" :secondaryTitle="'委託服務'"></RouterTitle>
+    <div class="serverContainer"></div>
   </div>
 </template>
 

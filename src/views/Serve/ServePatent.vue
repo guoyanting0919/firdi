@@ -1,6 +1,7 @@
 <template>
   <div class="servePatent">
     <RouterTitle :routerTitle="'服務項目'" :secondaryTitle="'專利寄存'"></RouterTitle>
+    <div class="serverContainer">11233</div>
   </div>
 </template>
 

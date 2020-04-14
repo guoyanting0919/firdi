@@ -1,0 +1,11 @@
+.serverContainer {
+  width: 80%;
+  margin: auto;
+}
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $SmallDevices) {
+  .serverContainer {
+    width: 90%;
+    margin: auto;
+  }
+}
