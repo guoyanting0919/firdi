@@ -71,7 +71,8 @@
 export default {
   data() {
     return {
-      activeBanner: "研討會及重要活動"
+      activeBanner: "研討會及重要活動",
+      data: ""
     };
   },
   methods: {
