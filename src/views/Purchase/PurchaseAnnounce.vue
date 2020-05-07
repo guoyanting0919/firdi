@@ -9,7 +9,7 @@
       <div class="announce col-12 col-md-6 col-lg-4">
         <p>
           <span>公告案號:</span>
-          1081021099
+          10810221099
         </p>
         <p>
           <span>採購項目:</span>
